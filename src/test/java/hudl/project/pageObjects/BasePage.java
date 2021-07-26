@@ -19,7 +19,6 @@ public class BasePage {
         wait = new WebDriverWait(this.driver, 5);
     }
 
-
     public void setPrerequisites() {
         new ConfigReader();
     }
@@ -39,8 +38,8 @@ public class BasePage {
         driver.get(url);
     }
 
-    protected String getText(By by) {
-        return driver.findElement(by).getText();
+    protected String getTitleText() {
+        return driver.getTitle();
     }
 
     protected void click(By by) {
@@ -50,5 +49,4 @@ public class BasePage {
     private WebElement waitForElementToBePresent(By by) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
-
 }

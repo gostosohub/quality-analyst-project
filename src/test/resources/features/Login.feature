@@ -1,7 +1,14 @@
 Feature: Login functionality
 
-  Scenario: Login successfully
-  Given I navigate to the hudl home page
-  When I click on the "Log in" button
-  Then I should be see the login page
+  Background:
+
+  Scenario:lg1:Login to hudl application
+    Given I am on the "Login" page
+    When I click on the "Log in" button
+    Then I expect to see the login page
+
+  Scenario:lg1:Login to hudl application
+    Given I am on the "Login" page
+    When I click on the "Log in" button
+    Then I expect to see the login page
 
