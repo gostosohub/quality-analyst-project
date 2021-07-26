@@ -1,4 +1,4 @@
-package stepdefs;
+package stepDefinitions;
 
 import core.driverManager.DriverFactory;
 import core.fileReader.ConfigReader;
@@ -11,7 +11,7 @@ public class Hooks {
     public void beforeScenario() {
         new ConfigReader();
         DriverFactory.initiateDriver();
-        System.out.println("Driver opened on Thread ID::" + Thread.currentThread().getId());
+        System.out.println("Driver opened on Thread ID:" + Thread.currentThread().getId());
     }
 
     @After
