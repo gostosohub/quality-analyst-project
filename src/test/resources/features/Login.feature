@@ -31,7 +31,3 @@ Feature: Login page functionality
   Scenario:lp3: Need help link must takes you Login help page
     When I click on the Need help? link
     Then I expect to be see Login Help form
-
-
-
-
