@@ -4,7 +4,7 @@
 
 This project is testing hudl login functionbality using selenium webdriver, cucumber and java.
 
-## Intsallation and Running tests
+## Intsallation and running tests
   1. Clone the git repository using `git clone https://github.com/gostosohub/quality-analyst-project.git`
   2. Install Java 8 JDK, Git, Maven
   3. Run `mvn clean install` 
@@ -34,7 +34,7 @@ Test report will be created under
 
 ## Future tech debts
  1. Run tests in parallel
- 2. Run the test for multiple browsers, at the moment it is taking Browser from config 
+ 2. Run the test for multiple browsers, at the moment it is taking browser from config 
  3. Fix Github actions failures
  4. Add other types of tests such as accessibility, visual regression, api tests
  
