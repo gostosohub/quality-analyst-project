@@ -10,6 +10,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
                 "json:target/cucumber-reports/cucumber.json"
         },
         features = {"src/test/resources/features"},
-        glue = {"stepDefinitions"})
+        glue = {"stepDefinitions"},
+        tags = "not @ignore")
 public class TestRunner extends AbstractTestNGCucumberTests {
 }
