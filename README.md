@@ -31,3 +31,10 @@ Test report will be created under
 ./target/cucumber-html-reports/overview-features.html
 
 <img width="1525" alt="Screenshot 2021-07-27 at 16 55 50" src="https://user-images.githubusercontent.com/69424682/127193211-de8e53f1-5449-421a-bedb-7b7272bfecec.png">
+
+## Future tech debts
+ 1. Run tests in parallel
+ 2. Run the test for multiple browsers, at the moment it is taking Browser from config 
+ 3. Fix Github actions failures
+ 4. Add other types of tests such as accessibility, visual regression, api tests
+ 5. Dockerised the test for scalibility
