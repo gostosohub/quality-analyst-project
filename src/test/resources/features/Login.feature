@@ -4,6 +4,7 @@ Feature: Login page functionality
   Background:
     Given I am on the Login page
 
+  @ignore
   Scenario Outline:lp1: As a valid user I should able to login and navigate to profile page
     And I enter email "<email>"
     And I enter password "<password>"
