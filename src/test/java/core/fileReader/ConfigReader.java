@@ -8,31 +8,31 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-	private static Properties properties = new Properties();
-	private String configFilePath = "src/test/resources/configs/config.properties";
-	private String envFilePath = "src/test/resources/configs/%s.properties";
+    private static Properties properties = new Properties();
+    private String configFilePath = "src/test/resources/configs/config.properties";
+    private String envFilePath = "src/test/resources/configs/%s.properties";
 
-	public ConfigReader() {
-		readProperties(configFilePath);
+    public ConfigReader() {
+        readProperties(configFilePath);
 
-		String environmentToRun = getProperty("environment");
-		readProperties(String.format(envFilePath, environmentToRun));
-	}
+        String environmentToRun = getProperty("environment");
+        readProperties(String.format(envFilePath, environmentToRun));
+    }
 
-	private void readProperties(String filePath) {
-		try {
-			FileReader reader = new FileReader(new File(filePath));
+    private void readProperties(String filePath) {
+        try {
+            FileReader reader = new FileReader(new File(filePath));
 
-			properties.load(reader);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+            properties.load(reader);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-	}
+    }
 
-	public static String getProperty(String propertyName) {
-		return properties.getProperty(propertyName);
-	}
+    public static String getProperty(String propertyName) {
+        return properties.getProperty(propertyName);
+    }
 }

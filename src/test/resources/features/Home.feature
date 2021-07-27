@@ -1,9 +1,9 @@
-#Feature: Home page features
-#
-#  Background:
-#
-#  Scenario:hm1:Navigate to hudl login page
-#    Given I am on the "Home" page
-#    When I click on the "Log in" button
-#    Then I expect to see the login page
+@home
+Feature: Home page functionality
 
+  Background:
+    Given I am on the Home page
+
+  Scenario:hp1: Navigate to hudl login page
+    When I click on the Log In button
+    Then I expect to be on the login page

@@ -1,12 +1,9 @@
 package core.driverManager;
 
-
 import core.browserTypes.ChromeIDriverManager;
 import core.browserTypes.FirefoxIDriverManager;
 import core.fileReader.ConfigReader;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DriverFactory {
     public static ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<WebDriver>();

@@ -77,7 +77,7 @@
                         <configuration>
                             <projectName>Quality analyst project</projectName>
                             <skip>false</skip>
-                            <outputDirectory>testOutput</outputDirectory>
+                            <outputDirectory>target</outputDirectory>
                             <inputDirectory>target/cucumber-reports</inputDirectory>
                             <jsonFiles>
                                 <param>**/*.json</param>
