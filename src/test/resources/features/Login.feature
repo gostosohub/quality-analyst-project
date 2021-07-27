@@ -4,7 +4,7 @@ Feature: Login page functionality
   Background:
     Given I am on the Login page
 
-  @ignore
+  @validUser
   Scenario Outline:lp1: As a valid user I should able to login and navigate to profile page
     And I enter email "<email>"
     And I enter password "<password>"
@@ -14,6 +14,7 @@ Feature: Login page functionality
       | email                | password |
       | sonali.jot@gmail.com | ******** |
 
+  @invalidUser
   Scenario Outline:lp2: As a invalid user I shouldn't be able to login.
     And I enter email "<email>"
     And I enter password "<password>"
@@ -28,6 +29,7 @@ Feature: Login page functionality
       | sonali.jot@gmail.com |          |
       | 12121212             |          |
 
+  @needHelp
   Scenario:lp3: Need help link must takes you Login help page
     When I click on the Need help? link
     Then I expect to be see Login Help form
