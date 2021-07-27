@@ -38,3 +38,4 @@ Test report will be created under
  3. Fix Github actions failures
  4. Add other types of tests such as accessibility, visual regression, api tests
  5. Dockerised the test for scalibility
+ 
