@@ -1,9 +1,9 @@
 
-# quality-analyst-project
+# <h1>quality-analyst-project</h1>
 [![Java CI with Maven](https://github.com/gostosohub/quality-analyst-project/actions/workflows/maven.yml/badge.svg)](https://github.com/gostosohub/quality-analyst-project/actions/workflows/maven.yml)
 
 
-<h1>Tools & libraries</h1>
+<h2>Tools & libraries</h2>
 
 
 
