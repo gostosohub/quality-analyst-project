@@ -9,6 +9,7 @@ This project is testing hudl login functionbality using selenium webdriver, cucu
   2. Install Java 8 JDK, Git, Maven
   3. Run `mvn clean install` 
   4. Run `mvn test` (Before running, please add real user and password in the test @validUser in this [feature file](https://github.com/gostosohub/quality-analyst-project/blob/master/src/test/resources/features/Login.feature))
+  5. Run using tags `mvn test -Dcucumber.filter.tags="@validUser"`
   
   
 ## Tools, libraries and practices 
