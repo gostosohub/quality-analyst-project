@@ -11,7 +11,7 @@ public class BasePage {
 
     public BasePage() {
         this.driver = DriverFactory.getCurrentDriver();
-        wait = new WebDriverWait(this.driver, 5);
+        wait = new WebDriverWait(this.driver, 10);
     }
 
     protected void openPage(String url) {
