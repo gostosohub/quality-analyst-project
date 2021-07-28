@@ -18,6 +18,7 @@ This project is testing hudl login functionbality using selenium webdriver, cucu
   4. Build tool: Maven
   5. Reporting template: maven-cucumber-reporting
   6. Coding practices : Page object pattern, Factory method, DRY
+  7. Running tests parallel
 
 ## Reports
 Test report will be created under 
