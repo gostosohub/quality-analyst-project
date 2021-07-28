@@ -11,7 +11,7 @@ This project is testing hudl login functionbality using selenium webdriver, cucu
   4. Run `mvn test` (Before running, please add real user and password in the test @validUser in this [feature file](https://github.com/gostosohub/quality-analyst-project/blob/master/src/test/resources/features/Login.feature))
   
   
-## Tools & libraries
+## Tools, libraries and practices 
   1. Programming language: Java
   2. Browser automation framework: Selenium webdriver
   3. BDD Framework: Cucumber-JVM
