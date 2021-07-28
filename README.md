@@ -33,8 +33,8 @@ Test report will be created under
 <img width="1525" alt="Screenshot 2021-07-27 at 16 55 50" src="https://user-images.githubusercontent.com/69424682/127193211-de8e53f1-5449-421a-bedb-7b7272bfecec.png">
 
 ## Future tech debts
- 1. Run tests in parallel
- 2. Run the test for multiple browsers, at the moment it is taking browser from config 
- 3. Fix Github actions failures/fail it gracefully (@validUser in this [feature file](https://github.com/gostosohub/quality-analyst-project/blob/master/src/test/resources/features/Login.feature) is failing as I have not used the real password )
- 4. Add other types of tests such as accessibility, visual regression, api tests
+ 1. Run the test for multiple browsers, at the moment it is taking browser from config 
+ 2. Fix Github actions failures/fail it gracefully (@validUser in this [feature file](https://github.com/gostosohub/quality-analyst-project/blob/master/src/test/resources/features/Login.feature) is failing as I have not used the real password )
+ 3. Add other types of tests such as accessibility, visual regression, api tests
+ 4. Run tests with cucketags
  
