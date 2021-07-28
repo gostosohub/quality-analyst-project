@@ -18,7 +18,12 @@ This project is testing hudl login functionbality using selenium webdriver, cucu
   4. Build tool: Maven
   5. Reporting template: maven-cucumber-reporting
   6. Coding practices : Page object pattern, Factory method, DRY
-  7. Running tests parallel
+  7. Running given number (8) of tests
+      | Mode | Time taken |
+      | --- | ----------- |
+      | Sequentially  | around 32s |
+      | Parallelly | around 15-18s |
+     
 
 ## Reports
 Test report will be created under 
