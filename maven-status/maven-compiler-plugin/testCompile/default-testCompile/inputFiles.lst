@@ -5,9 +5,9 @@
 /home/runner/work/quality-analyst-project/quality-analyst-project/src/test/java/core/driverManager/BrowserType.java
 /home/runner/work/quality-analyst-project/quality-analyst-project/src/test/java/core/driverManager/IDriverManager.java
 /home/runner/work/quality-analyst-project/quality-analyst-project/src/test/java/hudl/project/pageObjects/BasePage.java
-/home/runner/work/quality-analyst-project/quality-analyst-project/src/test/java/stepDefinitions/Hooks.java
-/home/runner/work/quality-analyst-project/quality-analyst-project/src/test/java/stepDefinitions/LoginSteps.java
 /home/runner/work/quality-analyst-project/quality-analyst-project/src/test/java/hudl/project/pageObjects/ProfilePage.java
+/home/runner/work/quality-analyst-project/quality-analyst-project/src/test/java/stepDefinitions/LoginSteps.java
+/home/runner/work/quality-analyst-project/quality-analyst-project/src/test/java/stepDefinitions/Hooks.java
 /home/runner/work/quality-analyst-project/quality-analyst-project/src/test/java/core/fileReader/ConfigReader.java
 /home/runner/work/quality-analyst-project/quality-analyst-project/src/test/java/core/browserTypes/FirefoxIDriverManager.java
 /home/runner/work/quality-analyst-project/quality-analyst-project/src/test/java/hudl/project/pageObjects/HomePage.java

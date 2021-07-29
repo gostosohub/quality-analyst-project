@@ -3,11 +3,11 @@ stepDefinitions/HomeSteps.class
 core/driverManager/BrowserType.class
 core/browserTypes/FirefoxIDriverManager.class
 core/driverManager/DriverFactory.class
-core/browserTypes/ChromeIDriverManager.class
 core/driverManager/DriverFactory$1.class
+core/browserTypes/ChromeIDriverManager.class
 core/fileReader/ConfigReader.class
-stepDefinitions/LoginSteps.class
 hudl/project/pageObjects/HomePage.class
+stepDefinitions/LoginSteps.class
 stepDefinitions/Hooks.class
 hudl/project/pageObjects/BasePage.class
 hudl/project/pageObjects/LoginPage.class

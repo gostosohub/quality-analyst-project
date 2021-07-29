@@ -1,21 +1,34 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
         "keyword": "Background",
-        "steps": []
+        "steps": [
+          {
+            "result": {
+              "duration": 5590307751,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Home page",
+            "match": {
+              "location": "stepDefinitions.HomeSteps.iAmOnTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
       },
       {
-        "start_timestamp": "2021-07-26T21:54:06.254Z",
+        "start_timestamp": "2021-07-29T18:51:39.636Z",
         "before": [
           {
             "result": {
-              "duration": 7458765423,
+              "duration": 3212553132,
               "status": "passed"
             },
             "match": {
@@ -23,18 +36,18 @@
             }
           }
         ],
-        "line": 5,
-        "name": "lg1:Login to hudl application",
+        "line": 8,
+        "name": "hp1: Navigate to hudl login page",
         "description": "",
-        "id": "login-functionality;lg1:login-to-hudl-application",
+        "id": "home-page-functionality;hp1:-navigate-to-hudl-login-page",
         "after": [
           {
             "result": {
-              "duration": 68029387,
+              "duration": 70558975,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefinitions.Hooks.afterScenario()"
+              "location": "stepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -43,60 +56,859 @@
         "steps": [
           {
             "result": {
-              "duration": 2068589392,
+              "duration": 1028310048,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I am on the \"Login\" page",
+            "line": 9,
+            "name": "I click on the Log In button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Login\"",
-                  "offset": 12
-                }
-              ],
-              "location": "stepDefinitions.HomeSteps.iAmOnThePage(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 971205015,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I click on the \"Log in\" button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Log in\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.HomeSteps.iClickOnTheButton(java.lang.String)"
+              "location": "stepDefinitions.HomeSteps.iClickOnTheButton()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 23070068,
+              "duration": 9799221,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I expect to see the login page",
+            "line": 10,
+            "name": "I expect to be on the login page",
             "match": {
               "location": "stepDefinitions.LoginSteps.iShouldBeSeeTheLoginPage()"
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@home"
+          },
+          {
+            "name": "@navigateLogin"
+          }
         ]
       }
     ],
-    "name": "Login functionality",
+    "name": "Home page functionality",
     "description": "",
-    "id": "login-functionality",
+    "id": "home-page-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Home.feature",
+    "tags": [
+      {
+        "name": "@home",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3132514933,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Login page",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-29T18:51:39.662Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3202082287,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "lp2: As a invalid user I shouldn\u0027t be able to login.",
+        "description": "",
+        "id": "login-page-functionality;lp2:-as-a-invalid-user-i-shouldn-t-be-able-to-login.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 126877073,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 572296815,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter email \"s@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"s@gmail.com\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iEnterEmail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 535122614,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I enter password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 17
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iEnterPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 294066365,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the Log In submit button",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.iClickOnTheButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 903822186,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I expect to see an error message as \"We didn\u0027t recognize that email and/or password. Need help?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"We didn\u0027t recognize that email and/or password. Need help?\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iExpectToSeeAnErrorMessageAs(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 125200550,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "The Log In button is disabled",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.loginButtonIsDisabled()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@invalidUser"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3213931831,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Login page",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-29T18:51:39.655Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3200023979,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "lp2: As a invalid user I shouldn\u0027t be able to login.",
+        "description": "",
+        "id": "login-page-functionality;lp2:-as-a-invalid-user-i-shouldn-t-be-able-to-login.;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 68597150,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 508225052,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter email \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iEnterEmail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 473849688,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I enter password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 17
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iEnterPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 306698735,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the Log In submit button",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.iClickOnTheButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1117922220,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I expect to see an error message as \"We didn\u0027t recognize that email and/or password. Need help?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"We didn\u0027t recognize that email and/or password. Need help?\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iExpectToSeeAnErrorMessageAs(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 74351121,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "The Log In button is disabled",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.loginButtonIsDisabled()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@invalidUser"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2917267331,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Login page",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-29T18:51:39.664Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3204489863,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "lp2: As a invalid user I shouldn\u0027t be able to login.",
+        "description": "",
+        "id": "login-page-functionality;lp2:-as-a-invalid-user-i-shouldn-t-be-able-to-login.;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 119209178,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 845116994,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter email \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iEnterEmail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 531411265,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I enter password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 17
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iEnterPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 353605867,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the Log In submit button",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.iClickOnTheButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 907642737,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I expect to see an error message as \"We didn\u0027t recognize that email and/or password. Need help?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"We didn\u0027t recognize that email and/or password. Need help?\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iExpectToSeeAnErrorMessageAs(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 126117686,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "The Log In button is disabled",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.loginButtonIsDisabled()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@invalidUser"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2956801064,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Login page",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-29T18:51:39.645Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3203325967,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "lp2: As a invalid user I shouldn\u0027t be able to login.",
+        "description": "",
+        "id": "login-page-functionality;lp2:-as-a-invalid-user-i-shouldn-t-be-able-to-login.;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 66990231,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 824407015,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter email \"st@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"st@gmail.com\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iEnterEmail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 449525361,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I enter password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 17
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iEnterPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 258275482,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the Log In submit button",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.iClickOnTheButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1146043684,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I expect to see an error message as \"We didn\u0027t recognize that email and/or password. Need help?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"We didn\u0027t recognize that email and/or password. Need help?\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iExpectToSeeAnErrorMessageAs(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 75128031,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "The Log In button is disabled",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.loginButtonIsDisabled()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@invalidUser"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3408837758,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Login page",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-29T18:51:39.647Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3200364078,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "lp2: As a invalid user I shouldn\u0027t be able to login.",
+        "description": "",
+        "id": "login-page-functionality;lp2:-as-a-invalid-user-i-shouldn-t-be-able-to-login.;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 72371697,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 673658682,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter email \"12121212\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12121212\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iEnterEmail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 331287766,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I enter password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 17
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iEnterPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 282436607,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the Log In submit button",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.iClickOnTheButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1246238697,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I expect to see an error message as \"We didn\u0027t recognize that email and/or password. Need help?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"We didn\u0027t recognize that email and/or password. Need help?\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.iExpectToSeeAnErrorMessageAs(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20952760,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "The Log In button is disabled",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.loginButtonIsDisabled()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@invalidUser"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2851319842,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Login page",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-29T18:51:39.636Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3205089092,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "lp3: Need help link must takes you Login help page",
+        "description": "",
+        "id": "login-page-functionality;lp3:-need-help-link-must-takes-you-login-help-page",
+        "after": [
+          {
+            "result": {
+              "duration": 637191290,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 736991536,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click on the Need help? link",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.iClickOnTheNeedHelpLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 524294769,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I expect to be see Login Help form",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.iExpectToBeSeeLoginHelpForm()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@needHelp"
+          }
+        ]
+      }
+    ],
+    "name": "Login page functionality",
+    "description": "",
+    "id": "login-page-functionality",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/Login.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
