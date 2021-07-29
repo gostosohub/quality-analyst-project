@@ -11,7 +11,8 @@ import org.testng.annotations.DataProvider;
                 "json:target/cucumber-reports/cucumber.json"
         },
         features = {"src/test/resources/features"},
-        glue = {"stepDefinitions"})
+        glue = {"stepDefinitions"},
+        tags = "not @ignore")
 public class TestRunner extends AbstractTestNGCucumberTests {
         @Override
         @DataProvider( parallel = true)
