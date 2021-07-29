@@ -18,8 +18,11 @@ This project is testing hudl login functionbality using selenium webdriver, cucu
   3. BDD Framework: Cucumber-JVM
   4. Build tool: Maven
   5. Reporting template: maven-cucumber-reporting
-  6. Coding practices : Page object pattern, Factory method, DRY
-  7. Running given number (8) of tests
+  6. Coding practices : 
+       * Page object modal
+       * Factory pattern
+       * DRY principle 
+  8. Running given number (8) of tests
       | Mode | Time taken |
       | --- | ----------- |
       | Sequentially  | around 32s |
