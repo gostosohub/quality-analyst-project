@@ -45,6 +45,5 @@ Test report will be created under
 
 ## Future tech debts
  1. Run the test for multiple browsers, at the moment it is taking browser from config 
- 2. Fix Github actions failures/fail it gracefully (@validUser in this [feature file](https://github.com/gostosohub/quality-analyst-project/blob/master/src/test/resources/features/Login.feature) is failing as I have not used the real password )
- 3. Add other types of tests such as accessibility, visual regression, api tests
+ 2. Add other types of tests such as accessibility, visual regression, api tests
  
