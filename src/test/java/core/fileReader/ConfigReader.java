@@ -14,7 +14,6 @@ public class ConfigReader {
 
     public ConfigReader() {
         readProperties(configFilePath);
-
         String environmentToRun = getProperty("environment");
         readProperties(String.format(envFilePath, environmentToRun));
     }
@@ -22,7 +21,6 @@ public class ConfigReader {
     private void readProperties(String filePath) {
         try {
             FileReader reader = new FileReader(new File(filePath));
-
             properties.load(reader);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
