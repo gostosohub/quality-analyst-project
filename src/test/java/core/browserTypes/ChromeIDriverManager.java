@@ -8,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class ChromeIDriverManager implements IDriverManager {
 
-    @Override
     public WebDriver getDriver() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
