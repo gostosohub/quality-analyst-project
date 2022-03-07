@@ -2,7 +2,7 @@
 # <h1>Quality analyst project</h1>
 [![Java CI with Maven](https://github.com/gostosohub/quality-analyst-project/actions/workflows/maven.yml/badge.svg)](https://github.com/gostosohub/quality-analyst-project/actions/workflows/maven.yml)
 
-This project is testing hudl login functionbality using selenium webdriver, cucumber and java.
+This project is testing login functionbality using selenium webdriver, cucumber and java.
 
 ## Intsallation and running tests
   1. Clone the git repository using `git clone https://github.com/gostosohub/quality-analyst-project.git`
